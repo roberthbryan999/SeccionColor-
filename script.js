@@ -1,3 +1,4 @@
+
 function mostrarColor() {
     const color = document.getElementById("selectColor").value;
     const cuadro = document.getElementById("cuadroColor");
@@ -5,14 +6,15 @@ function mostrarColor() {
     cuadro.style.backgroundColor = color ? color : "transparent";
 }
 
+
 function mostrarVehiculo() {
     const vehiculo = document.getElementById("selectVehiculo").value;
     const cuadro = document.getElementById("cuadroVehiculo");
 
     const imagenes = {
-        carro: "https://pngimg.com/uploads/mercedes/mercedes_PNG80135.png",
-        moto: "https://pngimg.com/uploads/motorcycle/motorcycle_PNG3156.png",
-        bicicleta: "https://pngimg.com/uploads/bicycle/bicycle_PNG5374.png"
+        carro: "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f697.png",
+        moto: "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f3cd.png",
+        bicicleta: "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f6b2.png"
     };
 
     if (imagenes[vehiculo]) {
@@ -21,3 +23,5 @@ function mostrarVehiculo() {
         cuadro.innerHTML = "";
     }
 }
+
+
